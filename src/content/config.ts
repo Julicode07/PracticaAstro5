@@ -1,3 +1,4 @@
+// Content Layer
 import { defineCollection, z} from "astro:content";
 // z -> zod schema
 
@@ -9,8 +10,8 @@ const books = defineCollection({
     readtime: z.number(),
     description: z.string(),
     buy: z.object({
-      spain: z.string(),
-      usa: z.string(),
+      spain: z.string().url(),
+      usa: z.string().url(),
     }),
   })
 })
