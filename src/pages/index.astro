@@ -26,6 +26,7 @@ const books = await getCollection("books");
                     class="mb-2 xl:mb-0 transition hover:scale-105 w-full"
                   >
                     <img
+                      transition:name={`img-${slug}`}
                       src={`/${img}`}
                       alt={title}
                       class="object-cover object-center w-full h-80 rounded-lg mb-4"
