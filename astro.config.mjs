@@ -5,6 +5,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
+  output: "server",
   integrations: [tailwind()],
   env: {
     schema: {
@@ -14,7 +15,7 @@ export default defineConfig({
         access: "public",
       }),
       SCORE_API_ENDPOINT: envField.string({
-        context: "client",
+        context: "server",
         access: "public",
       }),
     },

@@ -3,6 +3,9 @@ import Layout from "../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
 const books = await getCollection("books");
+
+/* Esta pagina no se renderiza en el servidor */
+export const prerender = true;
 ---
 
 <Layout title="Dev Books, libros recomendados para programadores">
