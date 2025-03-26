@@ -5,7 +5,7 @@ import { getCollection } from "astro:content";
 const books = await getCollection("books");
 
 /* Esta pagina no se renderiza en el servidor */
-export const prerender = true;
+export const prerender = false;
 ---
 
 <Layout title="Dev Books, libros recomendados para programadores">
