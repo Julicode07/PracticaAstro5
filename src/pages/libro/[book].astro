@@ -16,7 +16,7 @@ export async function getStaticPaths() {
 
 const { book } = Astro.props;
 const { data, slug } = book;
-const { title, author, img, readtime, description, buy } = data;
+const { title, img, buy } = data;
 const { Content } = await render(book);
 
 /* Esta pagina no se renderiza en el servidor */

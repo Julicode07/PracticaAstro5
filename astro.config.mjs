@@ -7,6 +7,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   output: "server",
   integrations: [tailwind()],
+
   env: {
     schema: {
       SHOW_BUY_BUTTON: envField.boolean({
@@ -20,6 +21,7 @@ export default defineConfig({
       }),
     },
   },
+
   devToolbar: {
     enabled: false,
   },
